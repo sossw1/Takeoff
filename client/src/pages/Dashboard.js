@@ -15,7 +15,7 @@ export default function Dashboard() {
 
   useEffect(() => {
     dispatch(getTrips(userId));
-  }, []);
+  }, [dispatch, userId]);
 
   return (
     <Container fixed>
